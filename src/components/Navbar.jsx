@@ -33,7 +33,7 @@ const Navbar = () => {
      px-4 text-white fixed bg-black"
     >
       <div>
-        <h1 className="text-5xl font-signature ml-2">Mariano</h1>
+        <h1 className="text-5xl font-signature ml-2">Mariano Loza</h1>
       </div>
 
       <ul className="hidden md:flex">
