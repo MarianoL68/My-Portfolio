@@ -8,23 +8,23 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      link: "Home",
+      link: "home",
     },
     {
       id: 2,
-      link: "About",
+      link: "about",
     },
     {
       id: 3,
-      link: "Proyects",
+      link: "proyects",
     },
     {
       id: 4,
-      link: "Tecnologies",
+      link: "technologies",
     },
     {
       id: 5,
-      link: "Contact",
+      link: "contact",
     },
   ];
 
@@ -78,7 +78,6 @@ const Navbar = () => {
         ))}
       </ul>
       )}
-
     </div>
   );
 };
