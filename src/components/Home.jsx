@@ -14,7 +14,7 @@ const Home = () => {
                 <h2 className='text-4xl sm:text-7xl font-bold text-white'>
                     I'm a Full Stack Developer
                  </h2>
-                <p className='text-gray-500 py-4'>
+                <p className='text-gray-500 py-4 max-w-none'>
                 As a Full Stack developer with a specialized focus on the back end, 
                 my relentless pursuit of challenges drives me to continue growing in the world of programming. 
                 My passion lies in crafting robust and efficient solutions, 

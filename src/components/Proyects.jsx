@@ -4,14 +4,30 @@ import PerriPedia from "../assets/proyects/PerriPedia.png"
 
 const Proyects = () => {
 
-    const proyects = [
+    const onClickHandler = [
         {
             id: 1,
-            src: DreamLodge
+            demo: "https://dreamlodgeprueba.web.app/",
+            code: "https://github.com/MarianoL68/DreamLodge-Project"
         },
         {
             id: 2,
-            src: PerriPedia
+            code: "https://github.com/MarianoL68/Proyecto-Individual-Dogs"
+        }
+    ]
+
+    const proyects = [
+        {
+            id: 1,
+            src: DreamLodge,
+            demo: "https://dreamlodgeprueba.web.app/",
+            code: "https://github.com/MarianoL68/DreamLodge-Project"
+        },
+        {
+            id: 2,
+            src: PerriPedia,
+            demo: "",
+            code: "https://github.com/MarianoL68/Proyecto-Individual-Dogs"
         }
     ]
 
@@ -27,14 +43,14 @@ const Proyects = () => {
 
         <div className='grid sm:grid-cols-2 gap-8 px-12 sm:px-0'>
         {
-            proyects.map(({id, src}) => (
+            proyects.map(({id, src, demo, code}) => (
             <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                 <img src={src} 
                      alt="" 
                      className='rounded-md duration-200 hover:scale-105'/>
                 <div className='flex items-center justify-center'>
-                    <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-115'>Demo</button>
-                    <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-115'>Code</button>
+                    <button onClick={() => window.open(demo, '_blank')} className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110'>Demo</button>
+                    <button onClick={() => window.open(code, '_blank')} className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110'>Code</button>
                 </div>
             </div>
             ))
