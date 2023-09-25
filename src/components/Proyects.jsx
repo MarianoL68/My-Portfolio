@@ -4,18 +4,6 @@ import PerriPedia from "../assets/proyects/PerriPedia.png"
 
 const Proyects = () => {
 
-    const onClickHandler = [
-        {
-            id: 1,
-            demo: "https://dreamlodgeprueba.web.app/",
-            code: "https://github.com/MarianoL68/DreamLodge-Project"
-        },
-        {
-            id: 2,
-            code: "https://github.com/MarianoL68/Proyecto-Individual-Dogs"
-        }
-    ]
-
     const proyects = [
         {
             id: 1,
